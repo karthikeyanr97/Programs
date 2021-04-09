@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AddTime extends UserMainCode109 {
+public class AddTime extends UserMainCode {
 
 	public static void main(String[] args) {
 
@@ -17,7 +17,7 @@ public class AddTime extends UserMainCode109 {
 	}
 }
 
-class UserMainCode109 {
+class UserMainCode {
 
 	public static String addTime(String time1, String time2) {
 
