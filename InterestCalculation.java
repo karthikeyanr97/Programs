@@ -3,7 +3,7 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class InterestCalculation extends UserMainCode117 {
+public class InterestCalculation extends UserMainCode {
 
 	public static void main(String[] args) {
 
@@ -33,7 +33,7 @@ public class InterestCalculation extends UserMainCode117 {
 	}
 }
 
-class UserMainCode117 {
+class UserMainCode {
 
 	public static TreeMap<String, Integer> calculateInterestRate(HashMap<String, String> idDob, HashMap<String, Integer> idAmt, String roiDate) {
 
