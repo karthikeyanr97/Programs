@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DateFormat extends UserMainCode114 {
+public class DateFormat extends UserMainCode {
 
 	public static void main(String[] args) {
 
@@ -17,7 +17,7 @@ public class DateFormat extends UserMainCode114 {
 	}
 }
 
-class UserMainCode114 {
+class UserMainCode {
 
 	public static String findOldDate(String date1, String date2) {
 
