@@ -1,4 +1,3 @@
-package com.ogon.programs.d0412;
 import java.util.ArrayList;
 import java.util.Scanner;
 
