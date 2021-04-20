@@ -6,10 +6,11 @@ public class StringProcessing extends UserMainCode {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Enter the string:");
-		String string = scanner.nextLine();
+		System.out.println("Enter the two strings:");
+		String string1 = scanner.nextLine();
+		String string2 = scanner.nextLine();
 
-		String result = exchangeCharacters(string);
+		String result = getCombo(string1, string2);
 		System.out.println(result);
 
 		scanner.close();
@@ -18,15 +19,17 @@ public class StringProcessing extends UserMainCode {
 
 class UserMainCode {
 
-	public static String exchangeCharacters(String string) {
+	public static String getCombo(String string1, String string2) {
 
-		String modifyStr = "";
-		char firstChar = string.charAt(0);
-		char lastChar = string.charAt(string.length() - 1);
+		if (string1.length() > 100 || string2.length() > 100)
+			return "String reached max of 100 characters";
 
-		modifyStr = lastChar + string.substring(1, string.length() - 1) + firstChar;
-		
-		return modifyStr;
-		// (or) return string.charAt(string.length() - 1) + string.substring(1,string.length() - 1) + string.charAt(0);
+		if (string1.length() > string2.length())
+			return string1 + string2 + string1;
+		else if (string1.length() < string2.length())
+			return string2 + string1 + string2;
+		else
+			return "";
+
 	}
 }
